@@ -6,7 +6,7 @@
 	     <groupId>b747758b-5cf0-4280-a157-f4d559ac8e70</groupId>
 	     <artifactId>solutions-bom</artifactId>
 	     <version>1.0.0</version> <!-- Replace with your actual parent version -->
-	     <relativePath>../parent-pom/pom.xml</relativePath> 
+	     <relativePath>parent-pom/pom.xml</relativePath> 
 	 </parent>
 
 
@@ -39,6 +39,7 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+					<classifier>mule-extension</classifier>
 					<cloudhub2Deployment>
 						<!-- URL of the control plane -->
 						<uri>https://anypoint.mulesoft.com</uri>
